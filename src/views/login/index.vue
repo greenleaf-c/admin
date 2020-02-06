@@ -110,7 +110,7 @@
         this.loginForm.username = 'admin';
       }
       if(this.loginForm.password === undefined||this.loginForm.password==null){
-        this.loginForm.password = '';
+        this.loginForm.password = 'macro123';
       }
     },
     methods: {
@@ -122,6 +122,7 @@
         }
       },
       handleLogin() {
+
         this.$refs.loginForm.validate(valid => {
           if (valid) {
             // let isSupport = getSupport();
